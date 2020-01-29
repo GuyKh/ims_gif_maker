@@ -6,6 +6,6 @@ import os.path
 
 class TestIms(unittest.TestCase):
     def test_create_latest_gif(self):
-        ims = ImsGifMaker('/Users/guyk/workspace/python/ims_gif_maker/tmp', '/Users/guyk/workspace/python/ims_gif_maker/output')
+        ims = ImsGifMaker('/Users/guyk/workspace/python/ims/tmp', '/Users/guyk/workspace/python/ims/output')
         ims.run()
-        assert os.path.exists('/Users/guyk/workspace/python/ims_gif_maker/output/movie.gif'), "File Exists"
+        assert os.path.exists('/Users/guyk/workspace/python/ims/output/movie.gif'), "File Exists"
